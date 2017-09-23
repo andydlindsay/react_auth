@@ -3,8 +3,9 @@ const express = require('express');
 const http = require('http');
 const bodyParser = require('body-parser');
 const morgan = require('morgan');
-const router = require('./routes/router');
+const router = require('./router');
 const mongoose = require('mongoose');
+// const process = require('process');
 
 // load environment variables
 require('dotenv').config();
@@ -25,4 +26,5 @@ const port = process.env.PORT || 3090;
 const server = http.createServer(app);
 server.listen(port, () => {
     console.log(`app is listening on port ${port}`);
+    // console.log(`the process id (pid) is ${process.pid}`);
 });
