@@ -7,6 +7,11 @@ function tokenForUser(user) {
     return jwt.encode({ sub: user.id, iat: timestamp }, process.env.SECRET_STRING);
 }
 
+exports.signin = function(req, res, next) {
+    // user has already been authorized, they need a token
+    res.send({ token: tokenForUser(req.user) });
+}
+
 exports.signup = (req, res, next) => {
     
     // pull data out of request body

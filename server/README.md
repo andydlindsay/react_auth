@@ -8,5 +8,5 @@
     - `DB_USER` - the database username
     - `DB_PASS` - the database password
     - `DB_HOST` - the database host
-    - `SECRET_KEY` - the key used by Passport
+    - `SECRET_STRING` - the secret string used by Passport
     
