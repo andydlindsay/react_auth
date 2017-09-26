@@ -9,4 +9,6 @@
     - `DB_PASS` - the database password
     - `DB_HOST` - the database host
     - `SECRET_STRING` - the secret string used by Passport
+- In the frontend directory:
+  - Run `npm install`
     
